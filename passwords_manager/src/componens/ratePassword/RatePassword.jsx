@@ -4,27 +4,17 @@ import Form from 'react-bootstrap/Form';
 
 
 export default function RatePassword() {
-
-
-  return (
-    <Form>
-    <Form.Group className="mb-3" controlId="formBasicEmail">
-      <Form.Label>Email address</Form.Label>
-      <Form.Control type="email" placeholder="Enter email" />
-      <Form.Text className="text-muted">
-        We'll never share your email with anyone else.
-      </Form.Text>
-    </Form.Group>
-
+ return (
+    <Form >
     <Form.Group className="mb-3" controlId="formBasicPassword">
-      <Form.Label>Password</Form.Label>
-      <Form.Control type="password" placeholder="Password" />
+      <h5>Password</h5>
+      <Form.Control size="lg" type="password" placeholder="Write your password" />
     </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicCheckbox">
-      <Form.Check type="checkbox" label="Check me out" />
+      <Form.Check type="checkbox" label="Show Password" />
     </Form.Group>
-    <Button variant="primary" type="submit">
-      Submit
+    <Button variant="primary" type="submit" >
+      Check
     </Button>
   </Form>
   )
