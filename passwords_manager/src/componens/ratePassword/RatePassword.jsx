@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
 import './style.css'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+//import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 export default function RatePassword() {
