@@ -6,7 +6,7 @@ import './style.css';
 export default function MyNavbar() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
-        <Navbar.Brand className='marginLeft' href="/">Password Manager</Navbar.Brand>
+        <Navbar.Brand className='marginLeft' href="/">Password Grader</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
