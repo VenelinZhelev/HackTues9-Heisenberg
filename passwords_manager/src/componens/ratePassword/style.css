@@ -1,15 +1,42 @@
 .password-strength-weak {
-  border-bottom: 2px solid red !important;
+  border-bottom: 3px solid red !important;
 }
 
 .password-strength-mid {
-  border-bottom: 2px solid orange !important;
+  border-bottom: 3px solid orange !important;
 }
 
 .password-strength-strong {
-  border-bottom: 2px solid green !important;
+  border-bottom: 3px solid green !important;
 }
 
 .password-strength-very-strong {
-  border-bottom: 2px solid blue !important;
+  border-bottom: 3px solid blue !important;
+}
+
+.inputWrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#input {
+  max-width: 45rem;
+}
+
+#button {
+  width: 8rem;
+}
+
+.title{
+  margin-bottom: 3rem;
+}
+
+.label{
+  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: start;
 }

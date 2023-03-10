@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    background-color: #000;
+  }
+  
+  #canv{
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .container {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow:0 0 .25em rgba(0, 0, 0, 0.25);
+    box-sizing:border-box;
+    left:50%;
+    padding: 5vmin 10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+    z-index: 1;
+    overflow: auto;
+    height: 80%;
+    width: fit-content;
+    margin-top: 2%;
+  }
+  
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Navbar{
+    border-top: black solid 1px;
+    border-radius: 8px;
+  }
+  
+  h1{
+    position: sticky;
+    text-align: center;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #d5d5d5;
+    border-radius: 10px;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #100f0f;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
