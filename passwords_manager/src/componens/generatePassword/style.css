@@ -1,0 +1,30 @@
+.settingsWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.checkboxWrapper {
+    display: flex;
+}
+
+.checkbox {
+    margin-left: 1rem;
+}
+
+.input {
+    max-width: 10rem;
+}
+
+#genButton {
+    margin-top: 3rem;
+    width: 80%;
+}
+
+.genPass {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
