@@ -1,10 +1,8 @@
-import React from 'react'
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
-import './style.css'
-//import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
+import './style.css';
 
 export default function RatePassword() {
     const [password, setPassword] = useState('');
@@ -25,7 +23,6 @@ export default function RatePassword() {
             strength--;
         else if (password.length > 10)
             strength++;
-
 
         switch (strength) {
             case 0: case 1: case 2:

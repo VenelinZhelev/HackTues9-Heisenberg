@@ -1,9 +1,11 @@
 import RatePassword from "./componens/ratePassword/RatePassword";
+import GeneratePassword from "./componens/generatePassword/generatePassword";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NotFound from "./componens/errors/notFound";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <BrowserRouter>
         <Routes>
@@ -14,6 +16,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
+    </Router>
   );
 }
 
