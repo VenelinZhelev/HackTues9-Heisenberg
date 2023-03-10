@@ -1,0 +1,15 @@
+.password-strength-weak {
+  border-bottom: 2px solid red !important;
+}
+
+.password-strength-mid {
+  border-bottom: 2px solid orange !important;
+}
+
+.password-strength-strong {
+  border-bottom: 2px solid green !important;
+}
+
+.password-strength-very-strong {
+  border-bottom: 2px solid blue !important;
+}
