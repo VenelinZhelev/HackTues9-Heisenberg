@@ -11,12 +11,17 @@ export default function GeneratePassword() {
   const [numberOfSymbols, setNumberOfSymbols] = useState(10);
   const [invalidNumber, setIntervalidNumber] = useState(false);
 
-  function passwordGeneration(length, sus) {
-    let char = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!?#*@_';
-    let pass = '';
-    const charDulj = char.length;
-    for (let i = 0; i < length; i++) {
-      pass += char.charAt(Math.floor(Math.random() * charDulj));
+  function passwordGeneration() {
+    let symbols = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz', pass = '';
+    if (includeSybols) {
+      symbols += '!?#*@_-';
+    }
+    if (includeNumbers) {
+      symbols += '0123456789';
+    }
+
+    for (let i = 0; i < numberOfSymbols; i++) {
+      pass += symbols.charAt(Math.floor(Math.random() * symbols.length));
     }
     return pass;
   }
