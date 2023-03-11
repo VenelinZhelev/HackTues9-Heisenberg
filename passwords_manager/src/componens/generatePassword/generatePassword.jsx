@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
@@ -44,27 +44,13 @@ export default function GeneratePassword() {
       setIntervalidNumber(true);
   }
 
-  function copyText() {
-    let copyText = document.getElementById("genPass");
-    copyText.select();
-    navigator.clipboard.writeText(copyText.value);
-  } 
-
   return (
     <Form>
       <h1><b>Password Generator</b></h1>
       <br></br>
-      <h4>Password Generator</h4>
-      <Form.Check type="checkbox" label="Use Symbols (! ? # * @ _)" />
-      <Form.Check type="checkbox" label="Use Numbers" />
-      <p>Write how much symbols you want in the password.</p>
-      <input type="text" id="myInput"/>
-      <Button id="genButton" variant="primary" onClick={() => generatePassword()} >
-      </Button>
       {
         password ?
           <Form.Group className="genPass" controlId="genPass"  >
-            <br></br>
             <Form.Control placeholder="Generated Password" value={password} />
             <Button id="copy" variant="primary" onClick={() => copyText()} >
               Copy
