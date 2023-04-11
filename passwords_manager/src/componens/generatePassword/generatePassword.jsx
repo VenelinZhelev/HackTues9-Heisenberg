@@ -6,9 +6,9 @@ import './style.css';
 
 export default function GeneratePassword() {
   const [password, setPassword] = useState(0);
-  const [includeSybols, setIncludeSybols] = useState(false);
-  const [includeNumbers, setIncludeNumbers] = useState(false);
-  const [numberOfSymbols, setNumberOfSymbols] = useState(10);
+  const [includeSybols, setIncludeSybols] = useState(true);
+  const [includeNumbers, setIncludeNumbers] = useState(true);
+  const [numberOfSymbols, setNumberOfSymbols] = useState(16);
   const [invalidNumber, setIntervalidNumber] = useState(false);
 
   function passwordGeneration() {
@@ -36,7 +36,7 @@ export default function GeneratePassword() {
 
 
   function validateNumber() {
-    if (numberOfSymbols > 0 && numberOfSymbols <= 50) {
+    if (numberOfSymbols > 5 && numberOfSymbols <= 50) {
       setPassword(passwordGeneration());
       setIntervalidNumber(false);
     }
@@ -60,11 +60,11 @@ export default function GeneratePassword() {
       }
       <div className='settingsWrapper'>
         <div className='checkboxWrapper' >
-          <Form.Check type="checkbox" label="Use Symbols (! ? # * @ _ -)" value={includeSybols} onChange={() => setIncludeSybols(!includeSybols)} />
-          <Form.Check className='checkbox' type="checkbox" label="Use Numbers" value={includeNumbers} onChange={() => setIncludeNumbers(!includeNumbers)} />
+          <Form.Check type="checkbox" label="Use Symbols (! ? # * @ _ -)" value={includeSybols} onChange={() => setIncludeSybols(!includeSybols)} defaultChecked={true}/>
+          <Form.Check className='checkbox' type="checkbox" label="Use Numbers" value={includeNumbers} onChange={() => setIncludeNumbers(!includeNumbers)} defaultChecked={true} />
         </div>
         <div>
-          <Form.Label className='label'>Number(1-50):</Form.Label>
+          <Form.Label className='label'>Number(6-50):</Form.Label>
           <Form.Control className='input' type="text" placeholder="Number of digits in the password" value={numberOfSymbols} onChange={(e) => setNumberOfSymbols(e.target.value)} />
           {invalidNumber && <p1>INVALID NUMBER</p1>}
         </div>

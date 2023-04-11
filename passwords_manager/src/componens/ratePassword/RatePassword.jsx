@@ -11,9 +11,9 @@ export default function RatePassword() {
   function calculateStrength() {
     console.log(password);
     let strength = 0;
-    if (password.match(/[a-z]/))
+    if (password.match(/[a-z]/) || password.match(/[а-я]/))
       strength++;
-    if (password.match(/[A-Z]/))
+    if (password.match(/[A-Z]/) || password.match(/[А-Я]/))
       strength++;
     if (password.match(/[0-9]/))
       strength++;
@@ -22,6 +22,8 @@ export default function RatePassword() {
     if (password.length < 8)
       strength--;
     else if (password.length > 10)
+      strength++;
+    else if(password.length >= 16)
       strength++;
 
     switch (strength) {

@@ -12,10 +12,10 @@ export default function About() {
         <br></br>
         <br></br>
         <h2>How to secure your online accounts?</h2>
-        <h5>The best way you can secure your account is by creating a strong password. <a href="/ratePassword">You can check how strong your password is by clicking here!</a> Other ways for securing your account include enabling Two-Factor Authentication, if the site supports it. This will send you a code to your e-mail or mobile phone and you must enter it in order to log into the account. You should also avoid sharing any information about the account with other people (such as e-mail, username, etc.).</h5>
+        <h5>The best way to protect your accounts online is to create a strong password. You can check how strong your password is <a href="./ratePassword">here</a>. If you would like to read more information about protecting your account, click <a href="./Account_Security">here</a>.</h5>
         <br></br>
         <h2>How to make a strong password?</h2>
-        <h5>In order to make a password, you must avoid commonly used ones (such as 12345678, qwerty, password, etc), and passwords that include easy to guess stuff (such as you birthday date, your mom's name, etc.). Strong passwords are usually very long and include other symbols, rather than just letters and numbers. <a href="/generatePassword">You can get an automatically generated, customizable, strong and secure password from here!</a></h5>
+        <h5>If you want to create a strong password, try to avoid commonly used ones, such as: 12345678, qwerty, password, etc. You can also generate a new, strong password from <a href='/generatePassword'>here</a></h5>
         </div>     
   )
 }

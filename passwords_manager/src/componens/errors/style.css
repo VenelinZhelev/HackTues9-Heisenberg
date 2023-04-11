@@ -6,4 +6,16 @@
 .number{
     text-align: center;  
     font-size: 100px;
+    color:black;
+    text-decoration: none;
+}
+
+.number > a{
+    color:black;
+    text-decoration: none;
+}
+
+.number > a:hover{
+    color:black;
+    cursor:none;
 }
