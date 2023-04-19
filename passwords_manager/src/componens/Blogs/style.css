@@ -1,0 +1,17 @@
+.before > a{
+    width: 1px;
+}
+
+.blog{
+    text-align: left;
+}
+
+.blog > h3{
+    padding-top: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.blog > p{
+    padding-right: 600px;
+}
